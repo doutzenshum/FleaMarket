@@ -1,0 +1,225 @@
+#panel, #panel_swap {
+	clear:both;
+	background-color:#FFF;
+	display: block;
+	border: 1px solid #CCC;
+	padding: 2em;
+}
+.panel.active-tab-body {
+	display: block;
+}
+#tabs {
+	list-style: none;
+}
+
+#tabs li {
+	float: left;
+}
+
+#tabs a {
+	float: left;
+	padding: 10px 10px;
+	margin-left: 6px;
+	background-color:#C33;
+	text-decoration: none;
+	color: #999999;
+    cursor: pointer;
+}
+
+#tabs a.active-tab {
+	background-color: #CCC;
+	border-top: 3px solid #999;
+	padding-top: 3px;
+	color: #000;
+}
+input.disabled {
+	border: 1px solid #F2F2F2;
+	background-color: #F2F2F2;
+}
+
+input.required, textarea.required {
+	border: 1px solid #00A8E6;
+}
+input.validation-failed, textarea.validation-failed {
+	border: 1px solid #FF3300;
+	color : #FF3300;
+}
+input.validation-passed, textarea.validation-passed {
+	border: 1px solid #00CC00;
+	color : #000;
+}
+
+.validation-advice {
+	margin: 5px 0;
+	padding: 5px;
+	background-color: #FF3300;
+	color : #FFF;
+	font-weight: bold;
+}
+
+.custom-advice {
+	margin: 5px 0;
+	padding: 5px;
+	background-color: #C8AA00;
+	color : #FFF;
+	font-weight: bold;
+}
+
+fieldset {
+	padding: 1em;
+	margin-bottom: 0.5em;
+}
+
+label {
+	font-weight: bold;
+}
+.form-row {
+	clear: both;
+	padding: 0.5em;
+}
+
+/* 发布闲置 */
+.desc-info{
+	font-weight: 600;
+	font-size: 28px;
+    padding: 25px 0 30px 0;
+    text-align: center;
+}
+ul.flow{
+    color: #666;
+    font-size: 17px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center; 
+    width: 100%;
+}
+ul.flow,ul.flow li{
+    list-style: outside none none;
+    display: inline-block;
+    padding: 0 35px;
+}
+ul.flow li.flow-item.active > label.i-badge {
+    background-color: #c33;
+}
+ul.flow li.flow-item > label.i-badge {
+    background-color: #cdcdcd;
+    border-radius: 12px;
+    color: #fff;
+    margin-right: 12px;
+    padding: 0 6px;
+}
+ul.flow i.icon-arrow-right {
+    font-family: baicons2 !important;
+    font-style: normal !important;
+    font-variant: normal !important;
+    font-weight: 400 !important;
+    line-height: 1;
+    text-transform: none !important;
+    color: #cdcdcd;
+}
+#panel .wrap #catelogs, #panel_swap .swap-main #catelogs{
+    border-top: 1px solid gainsboro;
+    text-align: center;
+    margin: 24px auto 150px;
+    padding: 30px 0 50px 170px;
+}
+#panel .wrap #catelogs>a, #panel_swap .swap-main #catelogs>a{
+    float: left;
+    width: 170px;
+    text-align: left;
+    padding: 14px 0 14px 14px;
+    font-size: 18px;
+}
+/* 基本信息、以物换物 */
+#publish, .swap-publish{
+    display: none;   
+}
+#mainmenu .general-info{
+    border-bottom: 1px solid #dedede;
+    border-top: 1px solid #dedede;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 40px;
+    margin: 20px 0 8px;
+    padding-bottom: 8px;
+    padding-left: 370px;
+    padding-top: 25px;
+}
+#releaseForm .g-line, #swap-releaseForm .g-line{
+    font-size: 16px;
+    padding: 16px 0;
+}
+#releaseForm .g-line .g-label, #swap-releaseForm .g-line .g-label{
+    display: inline-block;
+    margin-right: 6px;
+    padding: 0;
+    text-align: right;
+    width: 37%;
+    font-size: 17px;
+}
+#releaseForm .g-line .g-label .required, #swap-releaseForm .g-line .g-label .required{
+    color: red;
+}
+#releaseForm .g-line .publish-item-detail, #swap-releaseForm .g-line .publish-item-detail{
+    display: inline-block;
+}
+#releaseForm .g-line .publish-item-detail .input, #swap-releaseForm .g-line .publish-item-detail .input{
+    border: 1px solid #aaa;
+    height: 30px;
+    margin-right: 6px;
+    vertical-align: middle;
+}
+
+#releaseForm .error-empty .publish-item-detail .input, #swap-releaseForm .g-line .error-empty .publish-item.detail .input{
+    border: 2px solid #c33;
+    height: 30px;
+    margin-right: 6px;
+    vertical-align: middle;
+}
+#releaseForm .g-line .publish-item-detail .input:focus, #swap-releaseForm .g-line .error-empty .publish-item.detail .input:focus{
+    border: 2px solid #00d1c1;
+    height: 30px;
+    margin-right: 6px;
+    vertical-align: middle;
+} 
+#releaseForm .g-line .publish-item-detail .selector, #swap-releaseForm .g-line .publish-item-detail .selector{
+    width: 100px;   
+}
+#releaseForm .g-line .publish-item-detail .input-large, #swap-releaseForm .g-line .publish-item-detail .input-large{
+    width: 250px;
+}
+#releaseForm .g-line .g-span, #swap-releaseForm .g-line .g-span{
+    display: none;   
+}
+#releaseForm .g-line .error,#releaseForm .g-line .empty, #swap-releaseForm .g-line .error,#releaseForm .g-line .empty{
+    color: #c33;
+    height: 30px;
+    margin-right: 6px;
+    vertical-align: middle;
+}
+#releaseForm .g-submit, #swap-releaseForm .g-submit{
+    border-top: 1px solid #dedede;
+    text-align: center;
+    margin-top: 15px;
+}
+#releaseForm .form-submit, #swap-releaseForm .form-submit{
+    background-color: #c33;
+    border: 1px solid #c33;
+    border-radius: 2px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1em;
+    height: 36px;
+    line-height: 34px;
+    padding: 0 2em;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.1s ease-in-out 0s;
+    vertical-align: middle;   
+    margin-top: 20px;
+    margin-left: -200px;
+}
+.div-assess{
+    display: none;     
+}

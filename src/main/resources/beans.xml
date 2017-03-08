@@ -1,26 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
-	xmlns:tx="http://www.springframework.org/schema/tx" xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:aop="http://www.springframework.org/schema/aop"
 	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:tx="http://www.springframework.org/schema/tx"
 	xmlns:mvc="http://www.springframework.org/schema/mvc"
-	xsi:schemaLocation="
-        http://www.springframework.org/schema/beans
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
         http://www.springframework.org/schema/beans/spring-beans.xsd
         http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context.xsd
-        http://www.springframework.org/schema/mvc
-        http://www.springframework.org/schema/mvc/spring-mvc.xsd
         http://www.springframework.org/schema/tx
         http://www.springframework.org/schema/tx/spring-tx.xsd
+        http://www.springframework.org/schema/mvc
+        http://www.springframework.org/schema/mvc/spring-mvc.xsd
         http://www.springframework.org/schema/aop 
         http://www.springframework.org/schema/aop/spring-aop.xsd">
-
-	<!-- 采用spring的混合配置： 1.自己写的类使用注解方案 2.第三方框架中的类，使用xml配置 3、AOP的切面，也可以采用两种方案 
-		A、事务处理》xml配置 b、其他切面增强 》 注解 -->
-
-	<!-- 调用Spring的扫描 -->
-	<context:component-scan base-package="com.xu" />
+        
+        
+        
+        
+	<!--采用三个混合配置 1.自己写的类使用注解 2.第3方的类使用xml配置 3.Aop a.事务处理 xml b。其他的切面增强 注解 -->
+	<!-- 扫描包 -->
+	<context:component-scan base-package="com.yc.dao.impl,com.yc.biz.impl,com.yc.aspect,com.yc.web.controller" />
+	<!-- 启用aspectj代理机制 -->
+	<aop:aspectj-autoproxy />
+	<!-- 读取数据库联接的配置 -->
+	<context:property-placeholder location="classpath*:jdbc.properties" />
+	<!-- 使用dbcp配置 -->
+	<bean id="dataSource" class="org.apache.commons.dbcp2.BasicDataSource"
+		destroy-method="close">
+		<property name="driverClassName" value="${jdbc.driverClassName}" />
+		<property name="url" value="${jdbc.url}" />
+		<property name="username" value="${jdbc.username}" />
+		<property name="password" value="${jdbc.password}" />
+	</bean>
+	
+	<!-- 创建mybatis的SQLSessionFactory bean -->
+	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+	     <property name="dataSource" ref="dataSource"></property>
+	     <!-- 去掉mybatis的配置文件，在spring中完成mybatis的配置 -->
+	     
+	     <!-- 加入mybatis的一些属性配置 -->
+	     <property name="configurationProperties">
+	         <props>
+	              <prop key="logImpl">LOG4J</prop>        
+	         </props>
+	     </property>
+	     <!-- 别名 -->
+		<property name="typeAliasesPackage" value="com.yc.bean" />
+		<!-- map映射 -->
+		<property name="mapperLocations" value="classpath*:com/yc/mapper/*.xml" />
+	          
+	</bean>
+	
+    <tx:annotation-driven transaction-manager="txManager"/>
+    <bean id="txManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+	
 
 
 </beans>

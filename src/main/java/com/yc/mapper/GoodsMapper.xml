@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yc.mapper.GoodsMapper">
+	
+	<cache eviction="FIFO" flushInterval="60000" size="512" readOnly="true"></cache>
+	
+	<!-- 使用二级缓存 
+	 <cache type="com.zd.dao.redis.cache.RedisCache"></cache> 
+	 -->
+	
+	<!-- 上架新品 -->
+	<select id="findIndexNewGoods"  resultType="Goods"  parameterType="Goods">
+		select * from onlinemall_goods where goodsstatus='1'  
+		order by goodsregtime desc limit 4
+	</select>
+	
+	<!-- 推荐商品 -->
+	<select id="findRecommandGoods"  resultType="Goods"  parameterType="Goods">
+		select * from onlinemall_goods where goodsstatus='1'  
+		order by goodsregtime  desc limit 4
+	</select>
+</mapper>

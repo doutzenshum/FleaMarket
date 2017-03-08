@@ -14,7 +14,7 @@ public class Goods implements Serializable{
 
     private Integer parentid;	//父类别id
 
-    private String userid;
+    private Long userid;
 
     private String goodstitle;	// #商品标题
 
@@ -68,11 +68,11 @@ public class Goods implements Serializable{
 		this.parentid = parentid;
 	}
 
-	public String getUserid() {
+	public Long getUserid() {
 		return userid;
 	}
 
-	public void setUserid(String userid) {
+	public void setUserid(Long userid) {
 		this.userid = userid;
 	}
 
@@ -199,7 +199,7 @@ public class Goods implements Serializable{
 				+ goodssuccesstime + "]";
 	}
 
-	public Goods(Long goodsid, Integer speciesid, Integer parentid, String userid, String goodstitle, Double goodsprice,
+	public Goods(Long goodsid, Integer speciesid, Integer parentid, Long userid, String goodstitle, Double goodsprice,
 			Double goodsrealprice, String goodsneworold, Integer goodsisbargain, Integer goodsissend,
 			String goodstelphone, Date goodsregtime, String goodsimg, String goodsdetail, String goodsstatus,
 			String nowaddress, Date goodsedittime, Date goodssuccesstime) {
@@ -227,6 +227,7 @@ public class Goods implements Serializable{
 	public Goods() {
 		super();
 	}
-    
+
+	
     
 }

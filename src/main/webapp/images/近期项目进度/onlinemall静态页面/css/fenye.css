@@ -1,0 +1,147 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+.clearfix::after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+.page {
+    margin-bottom: 10px;
+}
+.clearfix {
+    display: block;
+}
+html, body, div, span, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, address, big, cite, code, del, em, font, img, ins, small, strong, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend {
+    
+    padding: 0;
+}
+.page .p-wrap {
+    float: right;
+}
+html, body, div, span, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, address, big, cite, code, del, em, font, img, ins, small, strong, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend {
+    margin: 0;
+    padding: 0;
+}
+.page .p-num {
+    float: left;
+}
+.page .p-num a {
+    background-color: #333;
+    background-image: -moz-linear-gradient(center top , #f7f7f7, #f2f2f2);
+    background-repeat: repeat-x;
+    border: 1px solid #ddd;
+    color: #333;
+}
+.page .p-num a, .page .p-num b {
+    float: left;
+    font-size: 14px;
+    height: 36px;
+    line-height: 36px;
+    margin-right: 5px;
+    padding: 0 14px;
+}
+a {
+   
+    text-decoration: none;
+}
+.page .p-num .pn-prev i {
+    padding-left: 0;
+}
+.page .p-num .pn-prev i, .page .p-num .pn-next i {
+    color: #aaa;
+    font-family: "宋体";
+    font-size: 16px;
+    font-style: normal;
+    
+    vertical-align: middle;
+}
+html, body, div, span, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, address, big, cite, code, del, em, font, img, ins, small, strong, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend {
+    margin: 0;
+    
+}
+.page .p-num .pn-prev em, .page .p-num .pn-next em {
+vertical-align: middle;
+}
+em {
+font-style: normal;
+}
+.page .p-num a {
+    background-color: #f7f7f7;
+    background-image: -moz-linear-gradient(center top , #f7f7f7, #f2f2f2);
+    background-repeat: repeat-x;
+    border: 1px solid #ddd;
+    color: #333;
+}
+.page .p-num a, .page .p-num b {
+    float: left;
+    font-size: 14px;
+    height: 36px;
+    line-height: 36px;
+    margin-right: 5px;
+    padding: 0 14px;
+}
+
+.page .p-num .pn-break {
+    color: #ccc;
+}
+.page .p-num a, .page .p-num b {
+    float: left;
+    font-size: 14px;
+    height: 36px;
+    line-height: 36px;
+    margin-right: 5px;
+    padding: 0 14px;
+}
+.hide {
+    display: none;
+}
+.page .p-skip {
+    float: left;
+    margin-left: 20px;
+}
+.page .p-skip em {
+    float: left;
+    font-size: 14px;
+    line-height: 38px;
+}
+.page .p-skip .input-txt {
+    float: left;
+    font-size: 14px;
+    height: 30px;
+    line-height: 30px;
+    margin: 0 3px;
+    text-align: center;
+    width: 30px;
+}
+.input-txt {
+    border: 1px solid #ccc;
+   
+    padding: 3px;
+    
+}
+.page .p-skip .btn {
+    float: left;
+    font-size: 14px;
+    height: 27px;
+    line-height: 27px;
+    margin-left: 10px;
+}
+.btn-default {
+    background: #f7f7f7 -moz-linear-gradient(center top , #f7f7f7, #f2f2f2) repeat-x scroll 0 0;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    color: #666;
+    cursor: pointer;
+    display: inline-block;
+    
+    padding: 4px 13px 5px;
+    text-align: center;
+    text-decoration: none;
+}
+.select_page_my{
+	  background-color: #fff;
+}

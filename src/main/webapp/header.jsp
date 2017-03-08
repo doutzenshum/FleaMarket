@@ -1,23 +1,14 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<%@page isELIgnored="false"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<%@ taglib prefix="s" uri="http://java.sun.com/jsp/jstl/sql"%>
-<%@ taglib prefix="x" uri="http://java.sun.com/jsp/jstl/xml"%>
-<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
-<%  String path = request.getContextPath();
-	String basePath = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort()
-			+ path + "/";
+<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+<%-- <%@taglib prefix="s" uri="/struts-tags"%> --%>
+<%
+String path = request.getContextPath();
+String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
 %>
-<base href="<%=basePath%>" />
 
-<head>
-<title>跳蚤市场</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<link href="./css/slider.css"   rel="stylesheet" type="text/css" media="all"/>
-<link href="./images/java.png"  rel="Bookmark" />
-<link href="./css/style.css"    rel="stylesheet" type="text/css" media="all"/>
-<link href="./css/head.show.css" rel="stylesheet" type="text/css" media="all"/>
+<link href="./css/slider.css" rel="stylesheet" type="text/css" media="all"/>
+<link href="./css/style.css" rel="stylesheet" type="text/css" media="all"/>
 <link href="./css/easy-responsive-tabs.css" rel="stylesheet" type="text/css" media="all"/>
 <script type="text/javascript" src="./js/jquery-1.7.2.min.js"></script> 
 <script type="text/javascript" src="./js/move-top.js"></script>
@@ -29,7 +20,21 @@
 <link rel="stylesheet" href="css/fenye.css" type="text/css"></link>
 <link href="css/layim.css" type="text/css" rel="stylesheet" />
 </head>
- 
+ <style type="text/css">
+ #bg{ display: none; position: absolute; top: 0%; left: 0%; width: 100%; height: 100%; background-color: black; z-index:1001; -moz-opacity: 0.7; opacity:.70; filter: alpha(opacity=70);}
+ #show{display: none; position: absolute; top: 20%; left: 35%; width: 25%; height: 60%; padding: 8px; border: 8px solid #E8E9F7; background-color: white; z-index:1002; overflow: auto;}
+ #btnclose{
+ 	margin-right:10px;
+ }
+ #show input[type="text"] {
+ 	font-size:12px;
+ 	color:#acacac;
+ }
+ #show textarea{
+ 	font-size:12px;
+ 	color:#acacac;
+ }
+ </style>
   <div class="wrap">
 	<div class="header">
 		<div class="headertop_desc">
@@ -38,17 +43,17 @@
 			</div>
 			<div class="account_desc">
 				<ul>
-						<c:if test="${show}>0">
+						<s:if test="#session.onlinemallUser==null">
 						<li><a href="reg.jsp">注册</a></li>
 						<li><a href="login.jsp">登陆</a></li>
-						</c:if>
-						<c:forEach items="${type}" var="info">
-							<li>欢迎你:</li>
-							<li><a href="javascript:void;">注销</a></li>
-							<li><a href="javascript:void;">我的信息</a></li>
-						</c:forEach>
+						</s:if>
+						<s:if test="#session.onlinemallUser!=null">
+							<li>欢迎你:<s:property value="#session.onlinemallUser.username"/></li>
+							<li><a href="user_logout.action">注销</a></li>
+							<li><a href="my_userInfo.action?userid=<s:property value="#session.onlinemallUser.userid"/>">我的信息</a></li>
+						</s:if>
 					</ul>
-					<input id="checkuser" type="hidden" value=""/>
+					<input id="checkuser" type="hidden" value="<s:property value="#session.onlinemallUser.username"/>"/>
 			</div>
 		</div>
 		<div class="header_top">
@@ -56,22 +61,22 @@
 				<a href="index.jsp"><img src="./images/logo.png" alt="" /></a>
 			</div>
 			  <div class="cart">
-			  	   <p><font size="+2">欢迎来到湖工二手市场!!!</font> </p>
+			  	   <p><font size="+2">欢迎来到南华园二手市场!</font> </p>
 			  	   <div id="post_wish"><a href="javascript:showdiv()"><font color="#CC0033">发布求购</font></a></div>
 			  	   <div id="post_goods"><a href="post.jsp"><font color="#CC0033">我要卖闲置</font></a></div>
                    <div id="my_goods">
                         <p><div id="goods_status" class="wrapper-dropdown-2"> 我的闲置&nbsp;&nbsp;&nbsp;
 			  	   	      <ul class="dropdown">
-			  	   	     <c:if test="${show}>0">
-							<li ><a href="saling_sale.action?userid=1&goodsstatus=1">出售中</a></li>
-							<li><a href="saling_sale.action?userid=1&goodsstatus=0">已下架</a></li>
-                            <li><a href="saling_sale.action?userid=1&goodsstatus=3">已出售</a></li>
-                            </c:if>
-                         <c:if test="#session.onlinemallUser==null">    
+			  	   	      <s:if test="#session.onlinemallUser!=null">
+							<li ><a href="saling_sale.action?userid=<s:property value="#session.onlinemallUser.userid"/>&goodsstatus=1">出售中</a></li>
+							<li><a href="saling_sale.action?userid=<s:property value="#session.onlinemallUser.userid"/>&goodsstatus=0">已下架</a></li>
+                            <li><a href="saling_sale.action?userid=<s:property value="#session.onlinemallUser.userid"/>&goodsstatus=3">已出售</a></li>
+                            </s:if>
+                         <s:if test="#session.onlinemallUser==null">    
                              <li ><a href="login.jsp">出售中</a></li>
 							 <li><a href="login.jsp">下架中</a></li>
                             <li><a href="login.jsp">已出售</a></li>
-                           </c:if>
+                           </s:if>
 					      </ul>
                          </div></p>
                    </div>

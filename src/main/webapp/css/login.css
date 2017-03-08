@@ -1,0 +1,194 @@
+@charset "utf-8";
+/* CSS Document */
+/*		common		*/
+body {
+    font-size: 12px;
+}
+body {
+    font-family: Tahoma,Geneva,sans-serif;
+}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td {
+    margin: 0px;
+    padding: 0px;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+}
+input, textarea, select {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+/*		sign		*/
+.sign {
+    line-height: 1.5;
+}
+
+.sign h1 {
+    font-family: "Microsoft YaHei","微软雅黑","黑体";
+}
+.sign input {
+    vertical-align: middle;
+}
+.sign h1, .pre_login h2 {
+    font-weight: 400;
+    color: #E31256;
+}
+
+.sign .shadow_l {
+    left: -9px;
+}
+.sign .shadow_r {
+    background-color: transparent;
+    filter: none;
+    background-color: #FFF;
+    transform: scaleX(-1);
+    right: -9px;
+}
+.sign .shadow_l, .sign .shadow_r {
+    background: url(../images/shadow.png-1.png) no-repeat scroll center center transparent;
+    position: absolute;
+    height: 100%;
+    width: 8px;
+    top: 0px;
+}
+.sign .line {
+    height: 60px;
+}
+.sign .act, .sign .line {
+    margin: 0px 0px 28px;
+}
+.sign .act, .sign .line {
+    font-size: 12px;
+    margin: 30px 0px;
+    clear: both;
+    color: #333;
+}
+
+
+
+/* 		loginPic		*/
+.loginPic {
+    background: no-repeat scroll 0% 0% transparent;
+    width: 960px;
+    height: 370px;
+    position: relative;
+}
+/*		loginForm		*/
+
+.loginForm {
+    line-height: 1.5;
+	margin-top: 120px;
+	margin-bottom: 70px;
+	height: 460px;
+	margin: 100px auto;
+    width: 965px;
+}
+.loginForm .loginBord {
+    color: #333;
+}
+
+.textbox_ui input {
+    box-shadow: none;
+    border: 1px solid #CFCFCF;
+    background-color: #FFF;
+    vertical-align: middle;
+    padding: 10px 8px;
+    line-height: 1.5;
+    font-size: 14px;
+    outline: 0px none;
+    height: auto;
+    width: 284px;
+}
+
+/*		toregist		*/
+.loginTit h1 {
+    font-weight: 400;
+    font-size: 20px;
+    color: #B81D22;
+}
+
+.loginBord .loginTit {
+    line-height: 60px;
+}
+
+.loginTit .toregist {
+    color: #969696;
+    float: right;
+}
+a:hover {
+    text-decoration: underline;
+}
+a {
+    color: #B81D22;
+    text-decoration: none;
+}
+
+/*		loginBoard		*/
+.loginForm .loginBord {
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.075);
+    background: none repeat scroll 0% 0% rgba(255, 255, 255, 0.85);
+    border: 1px solid #EDEDED;
+    position: absolute;
+    min-height: 400px;
+    padding: 0px 23px;	
+    width: 310px;
+    color: #333;
+	top:-60px;
+    right: 0px;
+}
+
+/*		inputBtn		*/
+input[type="reset"], input[type="submit"], input[type="submit"] {
+    display: inline-block;
+    font-family: inherit;
+    word-break: keep-all;
+    background: none repeat scroll 0% 0% #B81D22;
+    white-space: nowrap;
+    text-align: center;
+    line-height: 40px;
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 0px 30px;
+    height: 40px;
+    color: #FFF;
+    border: 0px none;
+}
+
+/*		valCode		*/
+.verityWrap input {
+    width: 138px;
+}
+.verityWrap a, .verityWrap img {
+    display: inline-block;
+}
+.verityWrap img {
+    height: 38px;
+    border: 1px solid #CFCFCF;
+}
+.verityWrap a, .verityWrap img, .verityWrap .textbox_ui {
+    vertical-align: middle;
+    margin-right: 12px;
+}
+#change_verify_code {
+    cursor: pointer;
+    color: #B81D22;
+}
+.textbox_ui .invalid, .textbox_ui .focus_text {
+    word-break: keep-all;
+    white-space: nowrap;
+    margin-top: 4px;
+    color: #999;
+	position: absolute;
+	line-height: 1.5;
+	display: none;
+}
+:focus ~ .focus_text {
+    display: block;
+}
+.loginForm .verityWrap .textbox_ui {
+    display: inline-block;
+    margin-bottom: 0px;
+}

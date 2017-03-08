@@ -1,0 +1,554 @@
+@charset "utf-8";
+/* CSS Document */
+.cont-top {
+    border-bottom: 1px solid #f3f3f3;
+    height: 57px;
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+    z-index: 999;
+}
+.conttop-box {
+    height: 57px;
+    margin: -2px auto 0;
+    position: relative;
+    width: 1200px;
+}
+.cont-top-headphoto {
+    border-radius: 60px;
+    height: 105px;
+    left: 50px;
+    overflow: hidden;
+    position: absolute;
+    top: 15px;
+    width: 108px;
+}
+iv.cont-top-headphoto img {
+    border: 4px solid #fefefe;
+    border-radius: 60px;
+    height: 100px;
+    width: 100px;
+}
+img {
+   
+    vertical-align: top;
+}
+element.style {
+    opacity: 0;
+}
+.cont-top-headphoto a {
+    background: rgba(0, 0, 0, 0.5) none repeat scroll 0 0;
+    bottom: 0;
+    color: #fff;
+    height: 25px;
+    left: 0;
+    line-height: 25px;
+ 
+    position: absolute;
+    right: 0;
+    text-align: center;
+}
+a {
+    text-decoration: none;
+}
+a {
+    
+    cursor: pointer;
+    outline: 0 none;
+   
+}
+.conttopbox-left {
+    padding-left: 190px;
+    padding-top: 25px;
+    white-space: nowrap;
+}
+.cont-top-name {
+    color: #333;
+    float: left;
+    font-size: 16px;
+    font-weight: 700;
+}
+.cont-top-level {
+    color: #c00;
+    float: left;
+    font-size: 12px;
+    height: 14px;
+    margin-left: 5px;
+    margin-top: 4px;
+    text-align: center;
+}
+element.style {
+    color: #5e5e5e;
+}
+.cont-top-word {
+    
+    font-family: "Microsoft YaHei";
+    font-size: 16px;
+}
+.wbox::after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+.wbox {
+    display: block;
+}
+.wbox {
+    clear: both;
+    margin: 0 auto;
+    width: 1210px;
+}
+.cont-middle {
+    font-family: "宋体";
+    position: relative;
+    text-align: left;
+    width: 1200px;
+}
+element.style {
+    border-right: 1px solid #e6e6e6;
+}
+.side-nav {
+    float: left;
+    padding-top: 80px;
+    width: 198px;
+}
+.padd-top-10 {
+    padding-top: 10px;
+}
+ol, ul, li {
+    list-style: outside none none;
+}
+body, dl, dt, dd, ul, ol, li, pre, form, fieldset, input, p, blockquote, th, td, menu {
+    font-weight: 400;
+    margin: 0;
+    
+}
+/*订单*/
+.sidenav-ul li.list-head {
+    background: rgba(0, 0, 0, 0) url("../../f2eimage/myaccount/sidenav-point.gif") no-repeat scroll 12px 17px;
+    padding-top: 5px;
+}
+.sidenav-ul li {
+    display: block;
+    font-family: "宋体";
+    height: 26px;
+    line-height: 26px;
+    padding-left: 20px;
+    position: relative;
+}
+li {
+    list-style: outside none none;
+}
+ody, dl, dt, dd, ul, ol, li, pre, form, fieldset, input, p, blockquote, th, td, menu {
+   
+    margin: 0;
+   
+}
+.sidenav-ul a {
+    color: #5e5e5e;
+    font-size: 12px;
+}
+.sidenav-ul li {
+    display: block;
+    font-family: "宋体";
+    height: 26px;
+    line-height: 26px;
+    padding-left: 20px;
+    position: relative;
+}
+body, dl, dt, dd, ul, ol, li, pre, form, fieldset, input, p, blockquote, th, td, menu {
+    font-weight: 400;
+    margin: 0;
+    
+}
+.sidenav-ul a {
+    color: #5e5e5e;
+    font-size: 12px;
+}
+.cont-r {
+    float: left;
+    width: 1000px;
+}
+.info_box {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    width: 960px;
+}
+.tab_info_box {
+    height: 27px;
+}
+/*基本资料*/
+.tab_info {
+    background: rgba(0, 0, 0, 0) url("../../f2eimage/myaccount/personal_info_line.png") repeat-x scroll 0 bottom;
+    height: 27px;
+}
+ol, ul, li {
+    list-style: outside none none;
+}
+body, dl, dt, dd, ul, ol, li, pre, form, fieldset, input, p, blockquote, th, td, menu {
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+element.style {
+    cursor: pointer;
+}
+.tab_info .current {
+    background: rgba(0, 0, 0, 0) url("../../f2eimage/myaccount/personal_info_cur.png") no-repeat scroll center bottom;
+    border-bottom: 2px solid #c00;
+    color: #c00;
+}
+.tab_info li {
+   
+    float: left;
+    font-family: "宋体";
+    font-size: 14px;
+    font-weight: 700;
+    height: 25px;
+    padding: 0 20px;
+}
+body, dl, dt, dd, ul, ol, li, pre, form, fieldset, input, p, blockquote, th, td, menu {
+    
+    margin: 0;
+    
+}
+.base_info_content {
+    padding-left: 50px;
+}
+.clear {
+    clear: both;
+}
+.progress_box {
+    padding: 28px 0 30px;
+}
+.col {
+    color: #5e5e5e;
+    float: left;
+    font-family: "宋体";
+    font-size: 12px;
+    text-align: right;
+    width: 86px;
+}
+.progress_wrap {
+    background: #f3f3f3 none repeat scroll 0 0;
+    float: left;
+    height: 10px;
+    margin-top: 3px;
+    width: 250px;
+}
+element.style {
+    width: 30%;
+}
+.progress {
+    background: #c00 none repeat scroll 0 0;
+    height: 10px;
+    
+}
+.percent {
+    color: #5e5e5e;
+    float: left;
+    font-size: 12px;
+    padding-left: 3px;
+}
+.clear {
+    clear: both;
+}
+.user_box {
+    padding: 15px 0 22px;
+}
+.col {
+    color: #5e5e5e;
+    float: left;
+    font-family: "宋体";
+    font-size: 12px;
+    text-align: right;
+    width: 86px;
+	
+}
+.username {
+    color: #5e5e5e;
+    float: left;
+    font-family: "宋体";
+    font-size: 12px;
+}
+.user_nickname {
+    height: 27px;
+    padding-bottom: 20px;
+}
+.col_2 {
+    display: inline-block;
+    height: 27px;
+    line-height: 27px;
+    vertical-align: middle;
+}
+.star {
+    color: #c00;
+}
+.col_2 {
+    line-height: 27px;
+}
+.col {
+    color: #5e5e5e;
+    font-family: "宋体";
+    font-size: 12px;
+    text-align: right;
+}
+.nickname_box, .phone_wrap, .email_wrap, .borth_wrap, .adress_wrap {
+    display: inline-block;
+    height: 27px;
+}
+.nickname, .phone_number, .email, .borth, .user_address {
+    border: 1px solid #ccc;
+    color: #333;
+    float: left;
+    font-size: 12px;
+    height: 20px;
+    line-height: 20px;
+    padding: 3px 5px;
+    width: 200px;
+}
+input, button, select, textarea {
+    outline: 0 none;
+}
+body, dl, dt, dd, ul, ol, li, pre, form, fieldset, input, p, blockquote, th, td, menu {
+    font-weight: 400;
+    margin: 0;
+    
+}
+.nickname_sign, .email_sign {
+    float: left;
+    line-height: 17px;
+    margin-left: 5px;
+    margin-top: 4px;
+}
+.edit_avter {
+    float: left;
+}
+.avater_box {
+    border-radius: 60px;
+    height: 105px;
+    overflow: hidden;
+    position: relative;
+    width: 108px;
+}
+.avater_box img {
+    border: 4px solid #fefefe;
+    border-radius: 60px;
+    height: 100px;
+    width: 100px;
+}
+img {
+   
+    vertical-align: top;
+}
+element.style {
+    cursor: pointer;
+}
+.edit {
+    background: rgba(0, 0, 0, 0.5) none repeat scroll 0 0;
+    bottom: 0;
+    color: #fff;
+    font-family: "宋体";
+    font-size: 12px;
+    height: 23px;
+    left: 2px;
+    line-height: 23px;
+    opacity: 50;
+    position: absolute;
+    text-align: center;
+    width: 100px;
+}
+.edit a {
+    color: #fff;
+}
+.gender_item {
+    padding-bottom: 35px;
+    padding-top: 12px;
+}
+.gender_radio {
+    float: left;
+}
+input, button, select, textarea {
+    outline: 0 none;
+}
+body, dl, dt, dd, ul, ol, li, pre, form, fieldset, input, p, blockquote, th, td, menu {
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+.lab {
+    margin-right: 20px;
+}
+input, button, select, textarea {
+    outline: 0 none;
+}
+.phone_box, .email_box, .borth_box, .adress_box {
+    padding-bottom: 20px;
+}
+.col_2 {
+    display: inline-block;
+    height: 27px;
+    line-height: 27px;
+    vertical-align: middle;
+}
+.col_2 {
+    line-height: 27px;
+}
+.nickname_box, .phone_wrap, .email_wrap, .borth_wrap, .adress_wrap {
+    display: inline-block;
+    height: 27px;
+}
+.validate_sign {
+    color: #5e5e5e;
+    float: left;
+    line-height: 27px;
+}
+element.style {
+    display: inline;
+}
+.mobile_show {
+    color: #333;
+    
+    float: left;
+    font-weight: 700;
+}
+element.style {
+    display: none;
+}
+.mobilevali_fail {
+    float: left;
+}
+.mobilevalidate_soon {
+    color: #06c;
+    float: left;
+    padding-left: 4px;
+}
+element.style {
+    display: inline;
+}
+.base_info_content .mobile_modify {
+    color: #06c;
+   
+    float: left;
+    margin-right: 0;
+    margin-top: 7px;
+    padding-left: 4px;
+    text-decoration: none;
+}
+element.style {
+    display: inline;
+}
+.emailvali_success, .mobilevali_success {
+    color: #a5a5a5;
+    
+    float: left;
+    padding: 7px 0 0 4px;
+}
+.phone_box, .email_box, .borth_box, .adress_box {
+    padding-bottom: 20px;
+}
+#noRegEmail1 {
+    color: #333;
+    display: none;
+    float: left;
+    font-weight: 700;
+    line-height: 25px;
+}
+.check_btn {
+    background: #f8f8f8 none repeat scroll 0 0;
+    border: 1px solid #ddd;
+    color: #5e5e5e;
+    cursor: pointer;
+    float: left;
+    font-size: 12px;
+    height: 24px;
+    line-height: 24px;
+    margin-left: 10px;
+    width: 65px;
+}
+input, button, select, textarea {
+    outline: 0 none;
+}
+body, dl, dt, dd, ul, ol, li, pre, form, fieldset, input, p, blockquote, th, td, menu {
+    font-weight: 400;
+    
+    padding: 0;
+}
+.base_info_content .email_modify {
+    color: #06c;
+    display: none;
+    float: left;
+    margin-right: 0;
+    margin-top: 7px;
+    padding-left: 4px;
+    text-decoration: none;
+}
+.erro_red {
+    color: #c00;
+    font-family: "宋体";
+    font-size: 12px;
+}
+.nickname_sign, .email_sign {
+    float: left;
+    line-height: 17px;
+    margin-left: 5px;
+    margin-top: 4px;
+}
+.phone_box, .email_box, .borth_box, .adress_box {
+    padding-bottom: 20px;
+}
+.nickname_box, .phone_wrap, .email_wrap, .borth_wrap, .adress_wrap {
+    display: inline-block;
+    height: 27px;
+}
+.nickname, .phone_number, .email, .borth, .user_address {
+    border: 1px solid #ccc;
+    color: #333;
+    float: left;
+    font-size: 12px;
+    height: 20px;
+    line-height: 20px;
+    padding: 3px 5px;
+    width: 200px;
+}
+#user_address {
+    width: 300px;
+}
+.nickname, .phone_number, .email, .borth, .user_address {
+    border: 1px solid #ccc;
+    color: #333;
+    float: left;
+    font-size: 12px;
+    height: 20px;
+    line-height: 20px;
+    padding: 3px 5px;
+    width: 200px;
+}
+.save_box {
+    padding-left: 76px;
+    padding-top: 35px;
+}
+.savebtn {
+    background: #c00 none repeat scroll 0 0;
+    border: medium none;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-size: 14px;
+    height: 32px;
+    width: 69px;
+}
+input, button, select, textarea {
+    outline: 0 none;
+}
+.hide {
+    display: none;
+}
+element.style {
+    height: 550px;
+    width: 100%;
+}

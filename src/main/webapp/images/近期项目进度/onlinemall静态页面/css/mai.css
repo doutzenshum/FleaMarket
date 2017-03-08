@@ -1,0 +1,703 @@
+@charset "utf-8";
+/* CSS Document */
+
+#page {
+    overflow: visible;
+}
+#page, #content {
+    width: 1080px;
+}
+#page {
+    width: 1080px;
+}
+#content, #footer, #header, #page {
+    margin-left: auto;
+    margin-right: auto;
+}
+.leftside {
+    float: left;
+    line-height: 1;
+    padding-right: 10px;
+    width: 160px;
+}
+.leftside .user-info {
+    border-bottom: 1px solid #dfdfdf;
+    padding: 20px 0 12px 11px;
+}
+.leftside .user-avatar, .leftside .user-avatar a, .leftside .user-avatar img {
+    height: 120px;
+    width: 120px;
+}
+.leftside .user-avatar {
+    background: #f1f1f1 none repeat scroll 0 0;
+    margin-bottom: 10px;
+    padding: 8px;
+}
+.leftside .user-avatar, .leftside .user-avatar a, .leftside .user-avatar img {
+    height: 120px;
+    width: 120px;
+}
+fieldset, img {
+    border: 0 none;
+}
+.leftside .user-nick {
+    color: #333;
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.user-credits {
+    height: 14px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+blockquote, body, button, dd, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, hr, input, legend, li, ol, p, pre, td, textarea, th, ul {
+   
+    padding: 0;
+}
+.user-credits .tb-rank {
+    height: 12px;
+    margin-right: 3px;
+}
+.user-credits .tb-rank, .user-credits a {
+    display: block;
+    float: left;
+}
+fieldset, img {
+    border: 0 none;
+}
+.user-credits .tb-rank, .user-credits a {
+    display: block;
+    float: left;
+}
+.sh-vip-icon1 {
+    background-position: 0 -468px;
+}
+#page .vip-my-level, #page .user-vip, .sh-user-vip, .sh-vip-my-level {
+  
+   
+    height: 14px;
+    padding: 0 0 2px;
+    text-indent: -9999px;
+    vertical-align: middle;
+    width: 14px;
+}
+blockquote, body, button, dd, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, hr, input, legend, li, ol, p, pre, td, textarea, th, ul {
+    margin: 0;
+    padding: 0;
+}
+.user-info .alipay a, .user-info .records a {
+    color: #b81d22 ;
+    line-height: 20px;
+}
+blockquote, body, button, dd, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, hr, input, legend, li, ol, p, pre, td, textarea, th, ul {
+    margin: 0;
+    padding: 0;
+}
+.user-info .alipay a, .user-info .records a {
+    color: #b81d22;
+    line-height: 20px;
+}
+.leftside .navigations {
+    border-bottom: 1px solid #dfdfdf ;
+    padding: 14px 0 12px;
+}
+blockquote, body, button, dd, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, hr, input, legend, li, ol, p, pre, td, textarea, th, ul {
+    margin: 0;
+    
+}
+ol, ul {
+    list-style: outside none none;
+}
+.leftside .navigations li {
+    margin-bottom: 6px;
+    position: relative;
+    z-index: 20;
+}
+.leftside .navigations li, .leftside .navigations li a {
+    height: 27px;
+    line-height: 27px;
+}
+blockquote, body, button, dd, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, hr, input, legend, li, ol, p, pre, td, textarea, th, ul {
+    margin: 0;
+    
+}
+.leftside .navigations li.selected a, .leftside .navigations .selected a:hover {
+    background-position: 0 0;
+    color: #fff;
+}
+.leftside .navigations li a:hover, .leftside .navigations .selected a {
+    height: 34px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 165px;
+    z-index: 21;
+}
+.leftside .navigations li a {
+    
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+    padding-left: 10px;
+}
+.leftside .navigations li, .leftside .navigations li a {
+    
+    line-height: 27px;
+}
+.leftside .navigations li a {
+    color: #b81d22 ;
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+    padding-left: 10px;
+}
+.leftside .navigations li, .leftside .navigations li a {
+    height: 27px;
+    line-height: 27px;
+}
+.leftside .navigations li a {
+    color:#b81d22 ;
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+    padding-left: 10px;
+}
+.leftside .navigations li, .leftside .navigations li a {
+    height: 27px;
+    line-height: 27px;
+}
+.leftside .navigations li a {
+    color: #b81d22 ;
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+    padding-left: 10px;
+}
+.leftside .navigations li, .leftside .navigations li a {
+    height: 27px;
+    line-height: 27px;
+}
+.leftside .navigations li a {
+    color: #b81d22 ;
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+    padding-left: 10px;
+}
+.leftside .navigations li, .leftside .navigations li a {
+    height: 27px;
+    line-height: 27px;
+}
+a {
+    text-decoration: none;
+}
+.leftside .operations {
+    padding: 20px 0 0;
+}
+.leftside .operations .btn-sell, .leftside .operations .btn-resell {
+    height: 36px;
+    line-height: 36px;
+    text-indent: 11px;
+}
+.leftside .operations a {
+    position: relative;
+}
+.leftside .operations a, .leftside .operations b {
+    display: block;
+    width: 150px;
+}
+.leftside .operations .btn-resell {
+    margin: -1px 0 15px;
+}
+.leftside .operations .btn-sell, .leftside .operations .btn-resell {
+    height: 36px;
+    line-height: 36px;
+    text-indent: 11px;
+}
+.leftside .operations a {
+    position: relative;
+}
+.leftside .operations a, .leftside .operations b {
+    display: block;
+    width: 150px;
+}
+.myinfo_mygoods a:hover{
+	background:#b81d22;
+}
+.my-items-main {
+}
+.main-content {
+    border-color: #dfdfdf;
+    border-style: solid;
+    border-width: 0 1px 1px;
+    float: left;
+    margin-bottom: 40px;
+    min-height: 430px;
+    padding: 20px 10px 10px;
+    width: 880px;
+}
+.filter {
+    border: 1px dotted #d1dfc3;
+    color: #666;
+    height: 31px;
+    line-height: 31px;
+    margin-bottom: 20px;
+    padding: 0 10px;
+}
+.filter .checkboxes {
+    float: left;
+}
+blockquote, body, button, dd, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, hr, input, legend, li, ol, p, pre, td, textarea, th, ul {
+    margin: 0;
+    padding: 0;
+}
+.filter .checkbox {
+    margin-top: -2px;
+    vertical-align: middle;
+}
+blockquote, body, button, dd, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, hr, input, legend, li, ol, p, pre, td, textarea, th, ul {
+    
+    padding: 0;
+}
+button, input, select, textarea {
+    font-size: 100%;
+}
+.filter .checkboxes label {
+}address, cite, dfn, em, var {
+    font-style: normal;
+}
+.filter .oldlink {
+    float: right;
+}
+.myitem-lists {
+    padding-bottom: 43px;
+}
+blockquote, body, button, dd, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, hr, input, legend, li, ol, p, pre, td, textarea, th, ul {
+    margin: 0;
+    padding: 0;
+}
+ol, ul {
+    list-style: outside none none;
+}
+#page::after, .soldout-items::after, .item-main::after, .paginator-wrapper::after, .myitem-lists .item-main .bd::after, .comments-items::after {
+    clear: both;
+    content: " ";
+    display: block;
+    height: 0;
+}
+.item-main {
+}
+#page, .soldout-items, .item-main, .paginator-wrapper, .myitem-lists .item-main .bd, .comments-items {
+}
+blockquote, body, button, dd, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, hr, input, legend, li, ol, p, pre, td, textarea, th, ul {
+    margin: 0;
+    padding: 0;
+}
+.myitem-lists .item-main .hd {
+    background-color: #f5f5f5 ;
+    border-radius: 3px;
+    color: #666;
+    height: 28px;
+    line-height: 28px;
+    padding: 0 10px;
+}
+.myitem-lists .item-main .hd .pubtime {
+    float: left;
+    margin-right: 25px;
+}
+.pubtime, .lastmodified, .comments-main .tabs .current, .paginator a, .paginator a:hover, .paginator button, .paginator input, .paginator .paginator-curr, .empty-page .tips-content .action {
+}
+.myitem-lists .item-main .hd .lastmodified {
+    float: right;
+}
+.pubtime, .lastmodified, .comments-main .tabs .current, .paginator a, .paginator a:hover, .paginator button, .paginator input, .paginator .paginator-curr, .empty-page .tips-content .action {
+}
+#page::after, .soldout-items::after, .item-main::after, .paginator-wrapper::after, .myitem-lists .item-main .bd::after, .comments-items::after {
+    clear: both;
+    content: " ";
+    display: block;
+    height: 0;
+}
+.myitem-lists .item-main .bd {
+    min-height: 91px;
+    padding: 19px 0 21px;
+}
+#page, .soldout-items, .item-main, .paginator-wrapper, .myitem-lists .item-main .bd, .comments-items {
+}
+.myitem-lists .item-main .item-info {
+    float: left;
+    line-height: 1;
+    padding: 3px 15px 0 100px;
+    position: relative;
+    width: 290px;
+}
+.myitem-lists .item-main .item-title {
+    height: 36px;
+    line-height: 18px;
+    margin: 0 0 5px;
+    overflow: hidden;
+}
+.myitem-lists .item-main .item-title a {
+    color: #333;
+    word-wrap: break-word;
+}
+.myitem-lists .item-main .item-pic {
+    left: 12px;
+    position: absolute;
+    top: 6px;
+    z-index: 2;
+}
+.item-main .item-pic {
+    border: 1px solid #dfdfdf;
+}
+.item-main .item-pic, .item-main .item-pic a {
+    height: 78px;
+    width: 78px;
+}
+.item-main .item-pic a {
+}
+.item-main .item-pic, .item-main .item-pic a {
+    height: 78px;
+    width: 78px;
+}
+a {
+    text-decoration: none;
+}
+.item-main .item-pic img {
+    max-height: 78px;
+    max-width: 78px;
+}
+fieldset, img {
+    border: 0 none;
+}
+.clearfix::after {
+    clear: both;
+    content: " ";
+    display: block;
+    height: 0;
+}
+.item-ershou .price-info {
+    line-height: 22px;
+    margin-bottom: 5px;
+}
+.clearfix {
+}
+.item-ershou .item-price {
+    float: left;
+}
+.user-info .alipay i, .user-info .records i, .leftside .navigations li a:hover, .navigations .selected a, .leftside .operations a b, .leftside .operations a:hover b, .item-main .operations .operation, .item-paimai .item-title, .item-score em, .item-price, .score-special-tips, .item-cur-price em, .item-start-price em, .item-status, #main-content .ww-small a, .comments-items .operations a, .comments-items .operations a:hover, .item-toggle, .comments-items .related-item b, .myitem-lists .item-main .hd .auctiontime, .empty-page, .empty-page .tips-arrow, .top-tip .icon, .top-tip s, .no-similar .icon, .offer-list .btn, .offer-list .agreement .arrow, .offer-list .user-verify, .delivery-dialog .tip b {
+    background: transparent url("http://gtms04.alicdn.com/tps/i4/T14CDoFB8bXXbZLNQB-175-1723.png") no-repeat scroll -9999px -9999px;
+}
+.price-block {
+    font-family: Verdana;
+    font-size: 12px;
+}
+blockquote, body, button, dd, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, hr, input, legend, li, ol, p, pre, td, textarea, th, ul {
+    margin: 0;
+    padding: 0;
+}
+.item-ershou .item-statistics {
+    color: #9c9c9c;
+    margin-left: -11px;
+    overflow: hidden;
+}
+blockquote, body, button, dd, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, hr, input, legend, li, ol, p, pre, td, textarea, th, ul {
+    
+    padding: 0;
+}
+ol, ul {
+    list-style: outside none none;
+}
+.item-ershou .item-statistics li {
+    border-left: 1px solid #e6e6e4 ;
+    float: left;
+    line-height: 14px;
+    padding: 0 10px;
+}
+blockquote, body, button, dd, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, hr, input, legend, li, ol, p, pre, td, textarea, th, ul {
+    margin: 0;
+    padding: 0;
+}
+.item-ershou .item-statistics em {
+    font-family: Tahoma,Arial,Helvetica,sans-serif;
+    font-weight: 700;
+}
+address, cite, dfn, em, var {
+    font-style: normal;
+}
+.item-ershou .item-statistics li {
+    border-left: 1px solid #e6e6e4;
+    float: left;
+    line-height: 14px;
+    padding: 0 10px;
+}
+blockquote, body, button, dd, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, hr, input, legend, li, ol, p, pre, td, textarea, th, ul {
+    
+    padding: 0;
+}
+.item-ershou .item-statistics li {
+    border-left: 1px solid #e6e6e4;
+    float: left;
+    line-height: 14px;
+    padding: 0 10px;
+}
+blockquote, body, button, dd, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, hr, input, legend, li, ol, p, pre, td, textarea, th, ul {
+    
+    padding: 0;
+}
+
+.myitem-lists .item-main .item-status-box {
+    border: 1px dotted #d7d7d7 ;
+    float: left;
+    padding: 11px 10px 6px;
+    width: 230px;
+}
+.myitem-lists .item-main .item-score-box {
+    color: #333;
+    margin-bottom: 5px;
+    overflow: hidden;
+}
+.myitem-lists .item-main .item-status-box .item-status {
+    font-size: 14px;
+    font-weight: 700;
+}
+.user-info .alipay i, .user-info .records i, .leftside .navigations li a:hover, .navigations .selected a, .leftside .operations a b, .leftside .operations a:hover b, .item-main .operations .operation, .item-paimai .item-title, .item-score em, .item-price, .score-special-tips, .item-cur-price em, .item-start-price em, .item-status, #main-content .ww-small a, .comments-items .operations a, .comments-items .operations a:hover, .item-toggle, .comments-items .related-item b, .myitem-lists .item-main .hd .auctiontime, .empty-page, .empty-page .tips-arrow, .top-tip .icon, .top-tip s, .no-similar .icon, .offer-list .btn, .offer-list .agreement .arrow, .offer-list .user-verify, .delivery-dialog .tip b {
+    background: transparent url("") no-repeat scroll -9999px -9999px;
+}
+address, cite, dfn, em, var {
+    font-style: normal;
+}
+.item-score-box span {
+    color: #b81d22;
+}
+.item-score-box span {
+    color: #b81d22;
+}
+.item-score-bar {
+    background-color: #fff;
+    border: 1px solid #fee7d8 ;
+    height: 10px;
+    margin: 0 5px 0 0;
+    padding: 2px;
+    vertical-align: middle;
+    width: 65px;
+}
+.item-score-bar, .item-score-bar .progress {
+    display: inline-block;
+}
+element.style {
+    width: 20%;
+}
+.item-score-bar .progress {
+    background-color: #f60;
+    height: 10px;
+    vertical-align: top;
+}
+.item-score-bar, .item-score-bar .progress {
+    display: inline-block;
+}
+.item-score-box span {
+    color: #f60;
+	}
+.item-score-box span {
+    color: #f60;
+}
+.myitem-lists .item-main .pull-off .score-tips, .myitem-lists .item-main .score-level-1 .item-score em, .myitem-lists .item-main .score-level-1 .score-tips, .myitem-lists .item-main .score-level-0 .item-score em, .myitem-lists .item-main .score-level-0 .score-tips {
+    color: #d85b56;
+}
+.myitem-lists .item-main .score-tips {
+    line-height: 22px;
+}
+.score-tips .score-common-tips {
+    position: relative;
+}
+.score-tips p {
+    min-height: 44px;
+}
+blockquote, body, button, dd, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, hr, input, legend, li, ol, p, pre, td, textarea, th, ul {
+    margin: 0;
+    padding: 0;
+}
+.score-tips .score-common-tips .action {
+    bottom: 0;
+    position: absolute;
+    right: 0;
+}
+.score-tips .action {
+    color: #666;
+    text-decoration: underline;
+    text-indent: 0;
+}
+.myitem-lists .item-main .operations {
+    float: right;
+    padding: 0 30px 0 0;
+}
+.myitem-lists .item-main .operations .operation {
+    background-position: 100% -68px;
+    color: #666;
+    display: block;
+    height: 25px;
+    line-height: 24px;
+    margin-bottom: 8px;
+    text-align: center;
+    width: 59px;
+}
+a {
+    text-decoration: none;
+}
+.myitem-lists .item-main .operations .putoff-item, .myitem-lists .item-main .operations .puton-item {
+    float: left;
+}
+.myitem-lists .item-main .operations .inline-operation {
+    color: #999;
+    text-decoration: underline;
+    visibility: hidden;
+}
+.myitem-lists .item-main .operations .del-item {
+    float: right;
+}
+.myitem-lists .item-main .operations .inline-operation {
+    color: #999;
+    text-decoration: underline;
+    visibility: hidden;
+}
+#page::after, .soldout-items::after, .item-main::after, .paginator-wrapper::after, .myitem-lists .item-main .bd::after, .comments-items::after {
+    clear: both;
+    content: " ";
+    display: block;
+    height: 0;
+}
+.soldout-paginator, .comments-paginator, .paginator-wrapper, .soldout-paginator .wrapper, .comments-paginator .wrapper {
+}
+.paginator-wrapper {
+    border-top: 1px solid #e5e5e5;
+    padding: 20px 0 45px;
+}
+#page, .soldout-items, .item-main, .paginator-wrapper, .myitem-lists .item-main .bd, .comments-items {
+}
+.paginator-wrapper .wrapper {
+    float: right;
+}
+.soldout-paginator .wrapper .paginator, .comments-paginator .wrapper .paginator, .paginator-wrapper .paginator {
+}
+/*
+.paginator {
+    font: 12px/1.5 tahoma,arial,simsun;
+    height: 23px;
+}
+.paginator .paginator-curr {
+    background-color: #d7f0d1;
+    background-position: -31px -232px;
+    border-color: #d7f0d1;
+    color: #b81d22;
+    font-weight: 700;
+}
+.paginator .paginator-curr, .paginator a {
+   
+    border-radius: 2px;
+    height: 21px;
+    text-align: center;
+    width: 29px;
+}
+*/
+.pubtime, .lastmodified, .comments-main .tabs .current, .paginator a, .paginator a:hover, .paginator button, .paginator input, .paginator .paginator-curr, .empty-page .tips-content .action {
+}
+.paginator form {
+    float: left;
+}
+blockquote, body, button, dd, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, hr, input, legend, li, ol, p, pre, td, textarea, th, ul {
+    margin: 0;
+    padding: 0;
+}
+.paginator span {
+    color: #666;
+    height: 23px;
+}
+.paginator span, .paginator a {
+    display: block;
+    float: left;
+    line-height: 21px;
+    margin-right: 5px;
+	}
+.paginator input {
+    border: 1px solid #d7d7d7;
+    border-radius: 2px;
+    float: left;
+    height: 17px;
+    line-height: 17px;
+    margin: 0 5px 0 0;
+    padding: 2px 0;
+    text-align: center;
+    width: 36px;
+}
+.pubtime, .lastmodified, .comments-main .tabs .current, .paginator a, .paginator a:hover, .paginator button, .paginator input, .paginator .paginator-curr, .empty-page .tips-content .action {
+}
+button, input, select, textarea {
+    font-size: 100%;
+}
+.paginator button {
+    background-color: #d7f0d1;
+    border: 0 none;
+    border-radius: 2px;
+    color: #b81d22;
+    cursor: pointer;
+    float: left;
+    height: 23px;
+    line-height: 23px;
+    padding: 0 10px;
+}
+.pubtime, .lastmodified, .comments-main .tabs .current, .paginator a, .paginator a:hover, .paginator button, .paginator input, .paginator .paginator-curr, .empty-page .tips-content .action {
+}
+blockquote, body, button, dd, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, hr, input, legend, li, ol, p, pre, td, textarea, th, ul {
+   
+    padding: 0;
+}
+button, input, select, textarea {
+    font-size: 100%;
+}
+ button, input, select, textarea {
+    font: 12px/1.5 tahoma,arial,"Hiragino Sans GB",宋体,sans-serif;
+}
+element.style {
+    vertical-align: middle;
+}
+fieldset, img {
+    border: 0 none;
+}
+.caliang {
+    position: relative;
+}
+.myitem-lists .item-main .operations .putoff-item, .myitem-lists .item-main .operations .puton-item {
+    float: left;
+}
+.myitem-lists .item-main .operations .inline-operation {
+    color: #999;
+    text-decoration: underline;
+    visibility: hidden;
+}
+.myitem-lists .item-main .operations .del-item {
+    float: right;
+}
+.myitem-lists .item-main .operations .inline-operation {
+    color: #999;
+    text-decoration: underline;
+    visibility: hidden;
+}
+.myitem-lists .item-main .operations .operation {
+    background-position: 100% -68px;
+    color: #666;
+    display: block;
+    height: 25px;
+    line-height: 24px;
+    margin-bottom: 8px;
+    text-align: center;
+    width: 59px;
+}
+a {
+    text-decoration: none;
+}
+#myinfo_mygoods{
+	background: #b81d22;
+}
