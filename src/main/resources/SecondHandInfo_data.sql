@@ -9,6 +9,7 @@ values('3','wbq','a','1437786232@qq.com','00001.jpg',now(),1,'男');
 insert into onlinemall_user(userid,username,userpass,useremail,userheadimg,userregtime,userstatus,usersex)
 values('4','zs','a','1437786232@qq.com','00002.jpg',now(),1,'男');
 
+select count(*)  from onlinemall_user where username='65665' and userpass='24515';
 #类别表的数据
 
 insert into onlinemall_species(parentid,speciesname) values(0,'手机 平板');#1

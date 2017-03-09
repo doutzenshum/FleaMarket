@@ -3,6 +3,9 @@ package com.yc.bean;
 import java.io.Serializable;
 import java.sql.Date;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class User implements Serializable{
 	
 	private static final long serialVersionUID = 7561777200196367512L;

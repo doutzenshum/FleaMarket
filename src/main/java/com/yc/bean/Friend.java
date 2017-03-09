@@ -1,5 +1,8 @@
 package com.yc.bean;
 
+import org.springframework.stereotype.Component;
+
+@Component
 //好友
 public class Friend {
 	

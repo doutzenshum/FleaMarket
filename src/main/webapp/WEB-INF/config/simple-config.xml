@@ -17,7 +17,7 @@
 	<!-- 加入视图解析器 -->
 	<bean id="jspViewResolver"
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-		<property name="prefix" value="/WEB-INF/jsp/" />
+		<!-- <property name="prefix" value="/WEB-INF/jsp/" /> -->
 		<property name="suffix" value=".jsp" />
 	</bean>
 
@@ -33,6 +33,7 @@
 	<mvc:resources location="/ueditor/" mapping="/ueditor/**" />
 	<mvc:resources location="//" mapping="/.html/**" />
 	<mvc:resources location="/uploadPdfs/" mapping="/uploadPdfs/**"/> 
+
 	
 	
 	<!-- 文件上传配置 -->

@@ -2,6 +2,8 @@ package com.yc.bean;
 
 import java.util.Date;
 
+import org.springframework.stereotype.Component;
+@Component
 //商品的交换物品表
 public class Swap {
 	private Long swapid;

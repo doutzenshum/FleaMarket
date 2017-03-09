@@ -1,5 +1,8 @@
 package com.yc.bean;
 
+import org.springframework.stereotype.Component;
+
+@Component
 //联系表
 public class Advice {
 	private Long adviceid;

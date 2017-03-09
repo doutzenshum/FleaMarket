@@ -105,7 +105,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					$('.wrapper-dropdown-2').removeClass('active');
 				});
 			});
-         </script>     
+         </script>
+              
 		<div class="clear"></div>
   </div>
 	<div class="header_bottom">

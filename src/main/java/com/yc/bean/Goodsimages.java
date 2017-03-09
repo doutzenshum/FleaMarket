@@ -2,6 +2,8 @@ package com.yc.bean;
 
 import java.io.Serializable;
 
+import org.springframework.stereotype.Component;
+@Component
 public class Goodsimages implements Serializable{
 
 	private static final long serialVersionUID = 4880580492064382989L;

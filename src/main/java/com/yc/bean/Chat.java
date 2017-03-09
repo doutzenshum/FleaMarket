@@ -2,6 +2,9 @@ package com.yc.bean;
 
 import java.util.Date;
 
+import org.springframework.stereotype.Component;
+
+@Component
 //聊天
 public class Chat {
 	

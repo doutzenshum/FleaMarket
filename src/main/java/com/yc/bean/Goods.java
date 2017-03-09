@@ -3,6 +3,8 @@ package com.yc.bean;
 import java.io.Serializable;
 import java.util.Date;
 
+import org.springframework.stereotype.Component;
+@Component
 //发布的商品表
 public class Goods implements Serializable{
 
