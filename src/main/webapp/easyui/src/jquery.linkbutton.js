@@ -1,10 +1,10 @@
 /**
- * jQuery EasyUI 1.5.1
+ * jQuery EasyUI 1.4.2
  * 
- * Copyright (c) 2009-2016 www.jeasyui.com. All rights reserved.
+ * Copyright (c) 2009-2015 www.jeasyui.com. All rights reserved.
  *
- * Licensed under the freeware license: http://www.jeasyui.com/license_freeware.php
- * To use it on other terms please contact us: info@jeasyui.com
+ * Licensed under the GPL license: http://www.gnu.org/licenses/gpl.txt
+ * To use it on other terms please contact us at info@jeasyui.com
  *
  */
 /**
@@ -136,7 +136,7 @@
 			var href = $(target).attr('href');
 			if (href){
 				state.href = href;
-				$(target).attr('href', 'javascript:;');
+				$(target).attr('href', 'javascript:void(0)');
 			}
 			if (target.onclick){
 				state.onclick = target.onclick;
@@ -216,10 +216,10 @@
 	$.fn.linkbutton.parseOptions = function(target){
 		var t = $(target);
 		return $.extend({}, $.parser.parseOptions(target, 
-			['id','iconCls','iconAlign','group','size','text',{plain:'boolean',toggle:'boolean',selected:'boolean',outline:'boolean'}]
+			['id','iconCls','iconAlign','group','size',{plain:'boolean',toggle:'boolean',selected:'boolean',outline:'boolean'}]
 		), {
 			disabled: (t.attr('disabled') ? true : undefined),
-			text: ($.trim(t.html()) || undefined),
+			text: $.trim(t.html()),
 			iconCls: (t.attr('icon') || t.attr('iconCls'))
 		});
 	};

@@ -2,6 +2,8 @@ package com.yc.bean;
 
 import java.io.Serializable;
 
+import org.springframework.stereotype.Component;
+@Component
 //类别
 public class Species implements Serializable{
 	

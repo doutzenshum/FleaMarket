@@ -21,7 +21,7 @@ create  table onlinemall_user(
 	userd varchar(1000),
 	usere varchar(1000)
 );
-select * from onlinemall_species;
+
 use market;
 #类别表
 create table onlinemall_species(

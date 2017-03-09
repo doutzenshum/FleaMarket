@@ -1,10 +1,10 @@
 /**
- * jQuery EasyUI 1.5.1
+ * jQuery EasyUI 1.4.2
  * 
- * Copyright (c) 2009-2016 www.jeasyui.com. All rights reserved.
+ * Copyright (c) 2009-2015 www.jeasyui.com. All rights reserved.
  *
- * Licensed under the freeware license: http://www.jeasyui.com/license_freeware.php
- * To use it on other terms please contact us: info@jeasyui.com
+ * Licensed under the GPL license: http://www.gnu.org/licenses/gpl.txt
+ * To use it on other terms please contact us at info@jeasyui.com
  *
  */
 /**
@@ -18,7 +18,7 @@
 	function init(target){
 		var slider = $('<div class="slider">' +
 				'<div class="slider-inner">' +
-				'<a href="javascript:;" class="slider-handle"></a>' +
+				'<a href="javascript:void(0)" class="slider-handle"></a>' +
 				'<span class="slider-tip"></span>' +
 				'</div>' +
 				'<div class="slider-rule"></div>' +
@@ -124,12 +124,12 @@
 		
 		var inner = slider.find('.slider-inner');
 		inner.html(
-			'<a href="javascript:;" class="slider-handle"></a>' +
+			'<a href="javascript:void(0)" class="slider-handle"></a>' +
 			'<span class="slider-tip"></span>'
 		);
 		if (opts.range){
 			inner.append(
-				'<a href="javascript:;" class="slider-handle"></a>' +
+				'<a href="javascript:void(0)" class="slider-handle"></a>' +
 				'<span class="slider-tip"></span>'
 			);
 		}
@@ -148,16 +148,18 @@
 				if (left < 0 || left > width) {
 					return false;
 				} else {
-					setPos(left, this);
+					setPos(left);
 					return false;
 				}
 			},
-			onStartDrag:function(){
+			onBeforeDrag:function(){
 				state.isDragging = true;
+			},
+			onStartDrag:function(){
 				opts.onSlideStart.call(target, opts.value);
 			},
 			onStopDrag:function(e){
-				setPos(opts.mode=='h'?e.data.left:e.data.top, this);
+				setPos(opts.mode=='h'?e.data.left:e.data.top);
 				opts.onSlideEnd.call(target, opts.value);
 				opts.onComplete.call(target, opts.value);
 				state.isDragging = false;
@@ -170,7 +172,7 @@
 			opts.onComplete.call(target, opts.value);
 		});
 		
-		function setPos(pos, handle){
+		function setPos(pos){
 			var value = pos2value(target, pos);
 			var s = Math.abs(value % opts.step);
 			if (s < opts.step/2){
@@ -182,21 +184,12 @@
 				var v1 = opts.value[0];
 				var v2 = opts.value[1];
 				var m = parseFloat((v1+v2)/2);
-				if (handle){
-					var isLeft = $(handle).nextAll('.slider-handle').length > 0;
-					if (value <= v2 && isLeft){
-						v1 = value;
-					} else if (value >= v1 && (!isLeft)){
-						v2 = value;
-					}
+				if (value < v1){
+					v1 = value;
+				} else if (value > v2){
+					v2 = value;
 				} else {
-					if (value < v1){
-						v1 = value;
-					} else if (value > v2){
-						v2 = value;
-					} else {
-						value < m ? v1 = value : v2 = value;
-					}					
+					value < m ? v1 = value : v2 = value;
 				}
 				$(target).slider('setValues', [v1,v2]);
 			} else {
@@ -295,8 +288,7 @@
 		var opts = state.options;
 		var slider = state.slider;
 		var size = opts.mode == 'h' ? slider.width() : slider.height();
-		var pos = opts.mode=='h' ? (opts.reversed?(size-pos):pos) : (opts.reversed?pos:(size-pos));
-		var value = opts.converter.toValue.call(target, pos, size);
+		var value = opts.converter.toValue.call(target, opts.mode=='h'?(opts.reversed?(size-pos):pos):(size-pos), size);
 		return value.toFixed(0);
 	}
 	

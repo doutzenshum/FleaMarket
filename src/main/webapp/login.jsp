@@ -1,13 +1,31 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>	
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ page isELIgnored="false"%>
+	
+<%
+	//将相对路径，全部替换成绝对路径
+	String path = request.getContextPath();  //  /duoban 
+	String basePath = request.getScheme()+ "://" +request.getServerName() + ":" +request.getServerPort() +path +"/";   
+%>
 <!doctype html>
 <html>
 <head>
-<base href="http://localhost:8080/SecondHandInfo/">
+<base href="<%=basePath%>">
 <meta charset="utf-8">
 <title>登录-南华二手</title>
 <link type="text/css" rel="stylesheet" href="css/login.css">
-<LINK rel="stylesheet" type="text/css" href="css/reg/loginreg.css">
+<LINK rel="stylesheet" type="text/css" href="css/loginreg.css">
+
+<script type="text/javascript">
+	//刷验证码
+	function loadImage(){
+		var img = document.getElementById("randImg");
+		img.src="imageCode.jsp?r="+Math.random();
+	}
+</script>
+	
 </head>
 
 <body>
@@ -30,8 +48,12 @@
 							<h1>
 								<strong>用户登录</strong>
 							</h1>
+							
 						</div>
-
+						
+						<c:if test="${errmsg!='' }">
+							<font style="color:red"><c:out value="${errmsg }"></c:out></font>
+						</c:if>
 
 						<form id="formpersonal" class="formpersonal" method="post"
 							action="user_login.action">
@@ -53,16 +75,13 @@
 
 							<div class="line verityWrap">
 								<div class="textbox_ui">
-									<input type="text" name="rCode" placeholder="验证码"
-										id="verify_code">
-									<div class="focus_text">按右图填写，不区分大小写</div>
+									<input type="text" name="rCode" placeholder="验证码" id="verify_code">
 									<div class="invalid">
-										<i></i>
-										<div class="msg"></div>
 									</div>
 								</div>
-								<span id="change_verify_code"> <img id="showcode"
-									src="code.jsp" /> <a href="javascript:showCodeAgain()">看不清</a>
+								<span id="change_verify_code"> 
+										<img id="randImg" src="imageCode.jsp" /> 
+										 <a href="javascript:loadImage()">看不清</a>
 								</span>
 							</div>
 

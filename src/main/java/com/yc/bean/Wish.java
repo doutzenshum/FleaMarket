@@ -3,6 +3,8 @@ package com.yc.bean;
 import java.io.Serializable;
 import java.util.Date;
 
+import org.springframework.stereotype.Component;
+@Component
 //心愿求购单
 public class Wish implements Serializable{
 
